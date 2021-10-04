@@ -8,24 +8,24 @@ pandas.set_option('colheader_justify', 'center')
 pandas.set_option('display.show_dimensions', False)
 pandas.set_option('display.max_rows', None)
 
-print("\nProgram for class areas determination.\n")
-while True:
-    train = input("Training set file? (e.g. train.txt): ")
-    try:
-        training_set = pandas.read_csv(train, header=None, sep='\s+', skiprows=[0])
-        break
-    except:
-        print("Cannot find corresponding file.")
-while True:
-    res = input("Output file? (e.g. result.txt): ")
-    try:
-        output = open(res, "w")
-        break
-    except:
-        print("Cannot create "+res+" file.")
+# print("\nProgram for class areas determination.\n")
+# while True:
+#     train = input("Training set file? (e.g. train.txt): ")
+#     try:
+#         training_set = pandas.read_csv(train, header=None, sep='\s+', skiprows=[0])
+#         break
+#     except:
+#         print("Cannot find corresponding file.")
+# while True:
+#     res = input("Output file? (e.g. result.txt): ")
+#     try:
+#         output = open(res, "w")
+#         break
+#     except:
+#         print("Cannot create "+res+" file.")
 
-# training_set = pandas.read_csv('iris_trn.txt', header=None, sep='\s+', skiprows=[0])
-# output = open('res7.txt', 'w')
+training_set = pandas.read_csv('dane4.txt', header=None, sep='\s+', skiprows=[0])
+output = open('res7.txt', 'w')
 
 features = []
 headers = ['class']
@@ -57,6 +57,7 @@ d_df = pandas.DataFrame([list_of_max_d], columns=classes, index=['d'])
 overlapping = pandas.DataFrame(index=training_set.index, columns=classes)
 for df in class_df:
     specimens = df[features].values
+    print(specimens)
     specimens_class = df['class'].values
     class_df_removed = [item for item in class_df if item is not df]
     for i in range(df.index.size):

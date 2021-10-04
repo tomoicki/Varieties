@@ -10,45 +10,45 @@ pandas.set_option('colheader_justify', 'center')
 pandas.set_option('display.show_dimensions', False)
 pandas.set_option('display.max_rows', None)
 
-print("\nNEAREST NEIGHBOR CLASSIFIER\n")
-while True:
-    train = input("Training set file? (e.g. train.txt): ")
-    try:
-        training_set = pandas.read_csv(train, header=None, sep='\s+', skiprows=[0])
-        break
-    except:
-        print("Cannot find corresponding file.")
-while True:
-    test = input("Testing set file? (e.g. test.txt): ")
-    try:
-        testing_set = pandas.read_csv(test, header=None, sep='\s+', skiprows=[0])
-        break
-    except:
-        print("Cannot find corresponding file.")
-while True:
-    res = input("Output file? (e.g. result.txt): ")
-    try:
-        output = open(res, "w")
-        break
-    except:
-        print("Cannot create "+res+" file.")
+# print("\nNEAREST NEIGHBOR CLASSIFIER\n")
+# while True:
+#     train = input("Training set file? (e.g. train.txt): ")
+#     try:
+#         training_set = pandas.read_csv(train, header=None, sep='\s+', skiprows=[0])
+#         break
+#     except:
+#         print("Cannot find corresponding file.")
+# while True:
+#     test = input("Testing set file? (e.g. test.txt): ")
+#     try:
+#         testing_set = pandas.read_csv(test, header=None, sep='\s+', skiprows=[0])
+#         break
+#     except:
+#         print("Cannot find corresponding file.")
+# while True:
+#     res = input("Output file? (e.g. result.txt): ")
+#     try:
+#         output = open(res, "w")
+#         break
+#     except:
+#         print("Cannot create "+res+" file.")
 
-# training_set = pandas.read_csv('iris_trn.txt', header=None, sep='\s+', skiprows=[0])
-# testing_set = pandas.read_csv('iris_tst.txt', header=None, sep='\s+', skiprows=[0])
-# output = open('res6.txt', 'w')
-
-print('Number of neighbours. Number from 1 to', training_set.index.size)
-while True:
-    k = input("k = ")
-    try:
-        k = int(k)
-        if k <= training_set.index.size:
-            break
-        else:
-            print('Too high number. training set has only {} specimens.'.format(training_set.index.size))
-    except:
-        print('Wrong input type. Need an integer.')
-# k = 20
+training_set = pandas.read_csv('iris_tst.txt', header=None, sep='\s+', skiprows=[0])
+testing_set = pandas.read_csv('iris_tst.txt', header=None, sep='\s+', skiprows=[0])
+output = open('res6.txt', 'w')
+#
+# print('Number of neighbours. Number from 1 to', training_set.index.size)
+# while True:
+#     k = input("k = ")
+#     try:
+#         k = int(k)
+#         if k <= training_set.index.size:
+#             break
+#         else:
+#             print('Too high number. training set has only {} specimens.'.format(training_set.index.size))
+#     except:
+#         print('Wrong input type. Need an integer.')
+k = 20
 
 features = []
 headers = ['class']
@@ -73,6 +73,8 @@ def kNN(k):
         specimen_class = klt[i]
         # euclidean distance from test specimen to every specimen in training set
         distances = numpy.linalg.norm(x - specimen, axis=1)
+        print(specimen)
+        print(distances)
         # list of IDs of closest k Neighbours
         nearest_neighbor_ids = distances.argsort()[:k]
         # list of classes of closest k Neighbours

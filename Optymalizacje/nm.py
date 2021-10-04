@@ -53,6 +53,7 @@ while criteria > epsilon:
     xs = list(dane[1])
     xh = list(dane[2])
     x0 = centroid(xl, xs)
+    print(x0)
     x0.append(f(x0))
     # 2)
     r = reflection(x0, xh)

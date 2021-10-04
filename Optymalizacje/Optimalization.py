@@ -3,11 +3,8 @@ import random
 import pandas
 
 
-def wp():  # wyczerpującego poszukiwania
-    global A
-    global B
-    a = A
-    b = B
+    a = 5
+    b = 0
     n = 99999
     print("\nWyczerpującego poszukiwania")
     print(f"(a,b) = {a, b}")
