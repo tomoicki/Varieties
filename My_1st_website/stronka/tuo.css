@@ -1,0 +1,328 @@
+head
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #003868;
+	background-color: #66CC00;
+	margin: 6mm;
+	text-align: center;
+	}
+body 
+	{
+	background: url(background.jpg) no-repeat black top center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 12px;
+	font-weight: normal;
+	color: black;
+	margin: 0 auto;
+	background-color: #000000;
+	}
+.all 
+	{
+	width: 1000px;
+	margin: auto;
+	}
+	
+/* Logo */
+.logo
+	{
+	width: 1000px;
+	height: 120px;
+	background-image: url('Header2.gif');
+	}
+.logo_przerwa
+	{
+	width: 1000px;
+	height: 70px;
+	}
+/* End-Logo */
+
+.kontent
+	{
+	width: 1000px;
+	}
+
+/* Lewe Menu */
+.LeftMenu
+	{
+	width:200px;
+	float:left;
+	}
+.LeftUp
+	{
+	width: 200px;
+	height: 40px;
+	text-align: left;
+	float: left;
+	overflow: hidden;
+	background-image: url('LeftMenuUp.gif');
+	background-repeat: no-repeat;
+	}
+.LeftMenuIcon
+	{
+	background-image:url(LeftMenuIcon.gif);
+	width: 176px;
+	height:20px;
+	position: relative;
+	top: 11px;
+	text-align: left;
+	left: 12px;
+	background-color: #1c1c42;
+	color: white;
+	}
+.LeftMenuUpText
+	{
+	color: white;
+	font-family: "Verdana";
+	font-weight: bold;
+	position: relative;
+	top: 2px;
+	left: 25px;
+	font-size:normal;
+	text-align: left;
+	}
+.LeftMiddle
+	{
+	width: 200px;
+	background-image: url('LeftMenuMiddle.gif');
+	background-repeat: repeat-y;
+	}
+.LeftMiddleText
+	{
+	color: #D0CECB;
+	font-weight: bold;
+	margin: 0px 12px 0px 16px;
+	text-align: left;
+	}
+.LeftMiddleText
+	{
+	color: #D0CECB;
+	font-weight: bold;
+	margin: 0px 12px 0px 16px;
+	text-align: left;
+	}
+.LeftDown
+	{
+	width: 200px;
+	margin-top: -12px;
+	height: 19px;
+	background-image: url('LeftMenuDown.gif');
+	background-repeat: no-repeat;
+	}
+/* End-Lewe Menu */
+
+/* Œrodek */
+.Middle
+	{
+	width: 600px;
+	float: left;
+	overflow: hidden;
+	}
+.MiddleUp
+	{
+	width: 600px;
+	height: 55px;
+	background-image: url('MiddleUp.gif');
+	}
+.MiddleMiddle
+	{
+	width: 600px;
+	background-image: url('MiddleMiddle.gif');
+	background-repeat: repeat-y;
+	}
+.MiddleDown
+	{
+	width: 600px;
+	height: 40px;
+	background-image: url('MiddleDown.gif');
+	}
+.MiddleBox
+	{
+	width: 575px;
+	margin-left: 15px;
+	}
+.MiddleBar
+	{
+	height: 26px;
+	width: 571px; 
+	background-image: url('MiddleBar.jpg');
+	}
+.MiddleBarTitle
+	{
+	color: #ffffff;
+	font-family: "Verdana";
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	top: 5px;
+	}
+.MiddleBoxText
+	{
+	width: 555px;
+	position: relative;
+	top: 4px;
+	left: 10px;
+	text-align: center;
+	}
+.MiddleBoxFoot
+	{
+	text-align: center;
+	margin-top: 10px;
+	}
+/* End-Œrodek */
+
+/* Prawe Menu */
+.RightMenu
+	{
+	width: 200px;
+	float: left;
+	overflow: hidden;
+	}
+.RightUp
+	{
+	width: 200px;
+	height: 40px;
+	text-align: left;
+	float: left;
+	overflow: hidden;
+	background-image: url('LeftMenuUp.gif');
+	background-repeat: no-repeat;
+	}
+.RightMenuIcon
+	{
+	background-image:url('LeftMenuIcon.gif');
+	width: 176px;
+	height:20px;
+	position: relative;
+	top: 11px;
+	text-align: left;
+	left: 12px;
+	background-color: #1c1c42;
+	}
+.RightMenuUpText
+	{
+	color: white;
+	font-family: "Verdana";
+	font-weight: bold;
+	position: relative;
+	top: 2px;
+	left: 25px;
+	font-size:normal;
+	text-align: left;
+	}
+.RightMiddle
+	{
+	width: 200px;
+	background-image: url('LeftMenuMiddle.gif');
+	background-repeat: repeat-y;
+	text-align: center;
+	}
+.FriendsTable
+	{
+	width: 180px;
+	margin: -10px;
+	}
+.AdvertTable
+	{
+	width: 180px;
+	margin-left: -20px;
+	}
+.RightDown
+	{
+	width: 200px;
+	margin-top: -12px;
+	height: 19px;
+	background-image: url('LeftMenuDown.gif');
+	background-repeat: no-repeat;
+	}
+/* End-Prawe Menu */
+
+/* Stopka */
+.Foot
+	{
+	width: 570px;
+	height: 80px;
+	background-image: url('Foot.jpg');
+	margin: auto;
+	clear: both;
+	}
+.Foot_text
+	{
+	color: white;
+	font-size: x-small;
+	font-weight: bold;
+	text-align: center;
+	}
+/* End-Stopka */
+
+/* Dodatki */
+dd
+	{
+	margin-left: 10px;
+	}
+#menu0 a:hover 
+	{
+	color: red; 
+	text-decoration: none;
+	}
+a.menu 
+	{
+	font-size:12;
+	color: #C0C0C0; 
+	text-decoration:none; 
+	font-family: "arial";
+	}
+a.activ
+	{
+	font-size: 12;
+	color: #C0C0C0; 
+	text-decoration: blink; 
+	font-family: "arial";
+	}
+a.przerwaloga
+	{
+	color: #FFFFFF; 
+	text-decoration: none; 
+	font-family: "Verdana";
+	font-weight: bold;
+	}
+.point
+	{
+	cursor: pointer;
+	font-size:12;
+	color: #C0C0C0; 
+	text-decoration:none; 
+	font-family: "arial";
+	cursor: pointer;
+	}
+.point:hover
+	{
+	color: red; 
+	text-decoration: none;
+	}
+p
+	{
+	text-align: justify;
+	}
+pre, code
+	{
+	font-size: 8pt;
+	}
+table
+	{
+	background: ##66FF00;
+	padding: 2px; 
+	border: 5px; 
+	margin: 5px auto 5px auto;
+	}
+tr
+	{
+	background-color: #c0c0c0;
+	}
+td 
+	{
+	text-align: center; 
+	vertical-align: middle;
+	background-color: #c0c0c0;
+	}
