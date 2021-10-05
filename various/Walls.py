@@ -1,8 +1,6 @@
-import math, numpy, ast, pandas, jinja2, urllib.request, json, csv, sys, math, io
 import tkinter as tk
 from tkinter import ttk
-from ast import literal_eval
-from contextlib import redirect_stdout
+
 
 root = tk.Tk() 
 

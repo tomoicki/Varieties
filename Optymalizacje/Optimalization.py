@@ -2,7 +2,7 @@ from math import fabs
 import random
 import pandas
 
-
+def wp():
     a = 5
     b = 0
     n = 99999
